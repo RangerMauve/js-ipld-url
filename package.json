@@ -1,0 +1,26 @@
+{
+  "name": "js-ipld-url",
+  "version": "1.0.0",
+  "description": "Parser and serializer for IPLD URLs in JavaScript",
+  "main": "ipldurl.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RangerMauve/js-ipld-url.git"
+  },
+  "author": "rangermauve <ranger@mauve.moe> (https://mauve.moe/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RangerMauve/js-ipld-url/issues"
+  },
+  "homepage": "https://github.com/RangerMauve/js-ipld-url#readme",
+  "keywords": [
+    "ipld",
+    "url",
+    "web",
+    "escape"
+  ]
+}
