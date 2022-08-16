@@ -2,10 +2,18 @@
   "name": "js-ipld-url",
   "version": "1.0.0",
   "description": "Parser and serializer for IPLD URLs in JavaScript",
-  "main": "ipldurl.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --format cjs ./ipldurl.js > index.cjs",
+    "prepublish": "npm run build"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./ipldurl.js",
+      "require": "./index.cjs",
+      "default": "./ipldurl.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -22,5 +30,8 @@
     "url",
     "web",
     "escape"
-  ]
+  ],
+  "devDependencies": {
+    "rollup": "^2.78.0"
+  }
 }

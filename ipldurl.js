@@ -6,7 +6,7 @@ export const ENCODED_SEPARATOR_REGEX = /%3B/g
 
 export const PARAMETER_EQUALS = '='
 
-export default class IPLDURL extends URL {
+export class IPLDURL extends URL {
   constructor (...args) {
     super(...args)
     if (this.protocol !== 'ipld:') {
